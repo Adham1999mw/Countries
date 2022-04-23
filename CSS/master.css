@@ -1,0 +1,193 @@
+:root {
+  --DarkBlue: hsl(200, 15%, 8%);
+  --DarkGray: hsl(0, 0%, 52%);
+  --LightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Nunito Sans', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.all-nav {
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 80px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+nav h2 {
+  font-size: 28px;
+}
+
+nav i {
+  font-size: larger;
+  cursor: pointer;
+}
+
+
+.main .search {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.main i {
+  position: absolute;
+  z-index: 2000;
+  left: 390px;
+  top: 61.5px;
+  cursor: pointer;
+}
+.main .search input {
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 15px;
+  color: hsl(209, 23%, 22%);
+  padding-left: 10px;
+  height: 40px;
+}
+.main .search input:focus {
+  outline: none;
+}
+
+.all {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 45px;
+}
+
+.all a .col {
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: .5s linear;
+  -webkit-transition: .5s linear;
+  -moz-transition: .5s linear;
+  -ms-transition: .5s linear;
+  -o-transition: .5s linear;
+}
+.countries .all a .col:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.all a .col img {
+  /* position: absolute; */
+  width: 100%;
+  border-radius: 8px;
+  height: 185px;
+}
+
+.all a .col .co-text {
+  margin-top: 24px;
+  padding-left: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.all a .col p {
+  color: gray;
+  padding-left: 120px;
+  position: relative;
+}
+
+.all a .col p:nth-child(3)::before {
+  position: absolute;
+  content: "Population :";
+  left: 39px;
+  color: gray;
+}
+.all a .col p:nth-child(4)::before {
+  position: absolute;
+  content: "Region :";
+  left: 39px;
+  color: gray;
+}
+.all a .col p:nth-child(5)::before {
+  position: absolute;
+  content: "Capital :";
+  left: 39px;
+  color: gray;
+}
+.all a .col p:nth-child(5) {
+  padding-bottom: 50px;
+}
+
+
+.nav-dark {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.main-dark {
+  background-color: hsl(207, 26%, 17%);
+}
+.col-light {
+  background-color: #67515138;
+}
+
+* {
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+.moon-dark {
+  color: white;
+}
+.worddark {
+  color: white;
+}
+
+
+.all a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.wordccdark {
+  color: white;
+}
